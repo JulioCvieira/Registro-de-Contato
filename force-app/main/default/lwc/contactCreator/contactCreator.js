@@ -9,7 +9,7 @@ export default class ContactCreator extends LightningElement {
     fields = [FIRSTNAME_FIELD, LASTNAME_FIELD, EMAIL_FIELD];
     handleSuccess(event) {
         const toastEvent = new ShowToastEvent({
-            title: "Contact created",
+            title: "Contact create",
             message: "Record ID: " + event.detail.id,
             variant: "success"
         });
